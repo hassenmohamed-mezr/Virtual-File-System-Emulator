@@ -1,7 +1,8 @@
 import math
 
 from fs_constants import FsConstants
-from directory_manager import DirectoryManager, DirectoryEntry
+from directory_entry import DirectoryEntry
+from directory_manager import DirectoryManager
 from fat_table_manager import FatTableManager
 
 
