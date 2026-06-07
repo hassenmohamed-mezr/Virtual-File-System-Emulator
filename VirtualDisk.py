@@ -1,11 +1,11 @@
 import os
-import fs_constants
+from fs_constants import FsConstants
 
 class VirtualDisk:
     def __init__(self, path, create_if_missing=True):
         self.path = path
-        self.cluster_size = fs_constants.CLUSTER_SIZE
-        self.cluster_count = fs_constants.CLUSTER_COUNT
+        self.cluster_size = FsConstants.CLUSTER_SIZE
+        self.cluster_count = FsConstants.CLUSTER_COUNT
         self.disk_size = self.cluster_size * self.cluster_count
         self.file_handle = None
         self._initialize(create_if_missing)
